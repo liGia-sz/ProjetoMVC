@@ -10,10 +10,16 @@ builder.Services.AddDbContext<BibliotecaDbContext>(options =>
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
     ));
 
+builder.Services.AddControllersWithViews();
+
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
-app.MapGet("/autor", async (BibliotecaDbContext db) => await db.Autores.ToListAsync());
-app.MapGet("/livro", async (BibliotecaDbContext db) => await db.Livros.ToListAsync());
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
