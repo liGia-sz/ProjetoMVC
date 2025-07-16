@@ -1,0 +1,25 @@
+@model BibliotecaMVCApp.Models.Livro
+@{
+    ViewData["Title"] = "Detalhes do Livro";
+}
+<h1>Detalhes do Livro</h1>
+<div>
+    <h4>Livro</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">@Html.DisplayNameFor(model => model.Titulo)</dt>
+        <dd class = "col-sm-10">@Html.DisplayFor(model => model.Titulo)</dd>
+        <dt class = "col-sm-2">@Html.DisplayNameFor(model => model.AnoPublicacao)</dt>
+        <dd class = "col-sm-10">@Html.DisplayFor(model => model.AnoPublicacao)</dd>
+        <dt class = "col-sm-2">@Html.DisplayNameFor(model => model.Genero)</dt>
+        <dd class = "col-sm-10">@Html.DisplayFor(model => model.Genero)</dd>
+        <dt class = "col-sm-2">@Html.DisplayNameFor(model => model.FaixaEtaria)</dt>
+        <dd class = "col-sm-10">@Html.DisplayFor(model => model.FaixaEtaria)</dd>
+        <dt class = "col-sm-2">Autor</dt>
+        <dd class = "col-sm-10">@Model.Autor?.Nome</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar para a Lista</a>
+</div>

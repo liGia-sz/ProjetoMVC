@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BibliotecaWebApp.Models
+namespace BibliotecaMVCApp.Models
 {
     public class Autor
     {

@@ -1,0 +1,37 @@
+@model IEnumerable<BibliotecaMVCApp.Models.Livro>
+@{
+    ViewData["Title"] = "Livros";
+}
+<h1>Livros</h1>
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo Livro</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.First().Titulo)</th>
+            <th>@Html.DisplayNameFor(model => model.First().AnoPublicacao)</th>
+            <th>@Html.DisplayNameFor(model => model.First().Genero)</th>
+            <th>@Html.DisplayNameFor(model => model.First().FaixaEtaria)</th>
+            <th>Autor</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Titulo</td>
+            <td>@item.AnoPublicacao</td>
+            <td>@item.Genero</td>
+            <td>@item.FaixaEtaria</td>
+            <td>@item.Autor?.Nome</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

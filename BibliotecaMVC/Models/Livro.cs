@@ -1,4 +1,4 @@
-namespace BibliotecaWebApp.Models
+namespace BibliotecaMVCApp.Models
 {
     public class Livro
     {

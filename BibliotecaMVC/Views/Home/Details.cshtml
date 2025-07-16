@@ -1,0 +1,37 @@
+﻿@model BibliotecaMVCApp.Models.Autor
+
+@{
+    ViewData["Title"] = "Detalhes do Autor";
+}
+
+<ul class="navbar-nav flex-grow-1">
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Autores" asp-action="Index">Autores</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Livros" asp-action="Index">Livros</a>
+    </li>
+    @* Outros links existentes *@
+</ul>
+
+<h1>Detalhes do Autor</h1>
+
+<div>
+    <h4>Autor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+    <a asp-action="Index">Voltar para a Lista</a>
+</div>

@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using BibliotecaWebApp.Models;
+using BibliotecaMVCApp.Models;
 
 namespace BibliotecaMVCApp.Data
 {

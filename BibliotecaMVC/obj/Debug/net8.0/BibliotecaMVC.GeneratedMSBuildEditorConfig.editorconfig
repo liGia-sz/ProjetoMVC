@@ -18,12 +18,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Alunos\Documents\LÍGIA\ProjetoMVC\BibliotecaMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Home/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Livros/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Livros/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Livros/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Livros/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Livros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGl2cm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Alunos/Documents/LÍGIA/ProjetoMVC/BibliotecaMVC/Views/Shared/Error.cshtml]

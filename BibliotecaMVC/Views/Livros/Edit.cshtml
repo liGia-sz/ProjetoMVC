@@ -1,0 +1,35 @@
+@model BibliotecaMVCApp.Models.Livro
+@{
+    ViewData["Title"] = "Editar Livro";
+}
+<h1>Editar Livro</h1>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Titulo" class="control-label"></label>
+        <input asp-for="Titulo" class="form-control" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnoPublicacao" class="control-label"></label>
+        <input asp-for="AnoPublicacao" class="form-control" />
+        <span asp-validation-for="AnoPublicacao" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Genero" class="control-label"></label>
+        <input asp-for="Genero" class="form-control" />
+        <span asp-validation-for="Genero" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FaixaEtaria" class="control-label"></label>
+        <input asp-for="FaixaEtaria" class="form-control" />
+        <span asp-validation-for="FaixaEtaria" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AutorId" class="control-label"></label>
+        <select asp-for="AutorId" class="form-control" asp-items="ViewBag.AutorId"></select>
+        <span asp-validation-for="AutorId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</form>
